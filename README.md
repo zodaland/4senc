@@ -11,6 +11,12 @@ Express, React를 배우며 큰 공부가 되었습니다.
 
 저에게 한번 만들어보라고 권유한 4senc사장님께 감사드립니다.
 
+# 사용 스택
+
+BackEnd: `TypeScript`, `Express.js`, `GraphQL`, `MySQL`, `winston`
+
+FrontEnd: `JavaScript`, `Next.js`, `Apollo`
+
 # URL
 테스트로 사용되어 실제 동작하는 URL입니다.
 
