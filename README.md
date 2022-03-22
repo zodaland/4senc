@@ -20,7 +20,7 @@ FrontEnd: `JavaScript`, `Next.js`, `Apollo`
 # URL
 테스트로 사용되어 실제 동작하는 URL입니다.
 
-API: https://testapi.4senc.com
+API: https://apitest.4senc.com
 
 WEB: https://test2.4senc.com
 
