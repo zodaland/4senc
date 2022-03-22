@@ -1,0 +1,21 @@
+{
+  "name": "4s-web",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "author": "Zodaland <me@zodaland.com> (https://zodaland.com)",
+  "dependencies": {
+    "apollo-boost": "^0.4.9",
+    "apollo-cache-inmemory": "^1.6.6",
+    "graphql": "^16.2.0",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^17.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}

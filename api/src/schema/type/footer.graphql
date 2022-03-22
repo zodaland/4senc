@@ -1,0 +1,7 @@
+type Query {
+	footer: String
+}
+
+type Mutation {
+	footer(info: String!): Boolean!
+}

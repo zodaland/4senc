@@ -1,0 +1,21 @@
+type Query {
+    businesses: [Business!]
+}
+
+type Mutation {
+    business(info: BusinessInput!) : IdxResult!
+    updateBusiness(info: BusinessInput!) : Result!
+    deleteBusiness(idx: Int!) : Result!
+}
+
+type Business {
+    idx: Int!
+    name: String!
+    image: String!
+}
+
+input BusinessInput {
+	idx: Int!
+    name: String!
+    image: String!
+}

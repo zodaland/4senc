@@ -1,0 +1,19 @@
+type Query {
+    getAuth(password: String!): AuthResult!
+    verifyAuth: Result!
+}
+
+type Mutation {
+    password(info: passwordInput!): Result!
+}
+
+type AuthResult implements ResultItem {
+    success: Boolean!,
+    message: String,
+    token: String
+}
+
+input passwordInput {
+    currentPassword: String!,
+    password: String!
+}

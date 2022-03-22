@@ -1,0 +1,7 @@
+type Query {
+	intro: [String!]
+}
+
+type Mutation {
+	intro(info: [String!]): Boolean!
+}

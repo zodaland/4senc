@@ -1,0 +1,15 @@
+interface ResultItem {
+    success: Boolean!,
+    message: String
+}
+
+type Result implements ResultItem {
+    success: Boolean!,
+    message: String
+}
+
+type IdxResult implements ResultItem {
+    success: Boolean!,
+    message: String,
+    idx: Int
+}

@@ -1,0 +1,19 @@
+type Query {
+	menu: [Menu!]
+}
+
+type Mutation {
+	menu(info: [MenuInput!]): Boolean!
+}
+
+type Menu {
+	path: String!,
+	name: String!,
+	comments: [String!]
+}
+
+input MenuInput {
+	path: String!,
+	name: String!,
+	comments: [String!]
+}

@@ -1,0 +1,17 @@
+type Query {
+    company: Company
+}
+
+type Company {
+    president: String!,
+    comment: [String!]
+}
+
+type Mutation {
+    company(info: CompanyInput!): Boolean!
+}
+
+input CompanyInput {
+    president: String!,
+    comment: [String!]
+}

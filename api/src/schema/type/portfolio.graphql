@@ -1,0 +1,32 @@
+type Query {
+    portfolio(idx: Int!): Portfolio
+    portfolios: [Portfolio]
+}
+
+type Mutation {
+    portfolio(info: PortfolioWithFileInput!): IdxResult!
+	updatePortfolio(info: PortfolioInput!): Result!
+	deletePortfolio(idx: Int!): Result!
+}
+
+type Portfolio {
+	idx: String
+    title: String
+    content: String
+    date: String
+    files: [String]
+}
+
+input PortfolioWithFileInput {
+    title: String!
+    content: String!
+    date: String!
+    files: [String!]
+}
+
+input PortfolioInput {
+	idx: Int!
+    title: String!
+    content: String!
+    date: String!
+}

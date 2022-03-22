@@ -1,0 +1,27 @@
+body { font-family: 'Noto Sans KR', Consolas, sans-serif; font-weight: 700; }
+body, button, coide, dd, dv, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, input, legend, li, ol, p, pre, select, td, textarea, th, ul { margin:0; padding:0; }
+ul li { list-style:none; padding-left:0px; }
+a { text-decoration:none; }
+hr { height: 0; border: 0; }
+textarea { resize: none; }
+button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select { -webkit-appearance: none; -moz-appearance: none; appearance: none; }
+select::-ms-expand{ 
+    display:none;
+}
+h4 { font-weight: 500; font-size: 23px; }
+img {-webkit-user-drag: none; }
+
+.content { width:100%; display:flex; justify-content:center; }
+.box { box-shadow: 5px 5px 7px #bbb; border-radius: 7px; margin: 15px; background: rgba(232, 232, 234, 0.7); }
+.no-drag { -ms-user-select: none; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; user-select: none; }
+
+@keyframes main {
+	0% { transform: translateX(50px); opacity: 0; }
+	100% { transform: translateX(0px); opacity: 1; }
+}
+
+@media all and (max-width: 648px) {
+	body {-ms-overflow-style:none; }
+	body::-webkit-scrollbar { display:none; }
+}

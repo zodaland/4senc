@@ -1,0 +1,21 @@
+type Query {
+    briefs: [Brief!]
+}
+
+type Mutation {
+    brief(info: BriefInput!) : IdxResult!
+    updateBrief(info: BriefInput!) : Result!
+    deleteBrief(idx: Int!) : Result!
+}
+
+type Brief {
+    idx: Int!,
+    summary: String!,
+    date: String!
+}
+
+input BriefInput {
+	idx: Int!
+    summary: String!,
+    date: String!
+}

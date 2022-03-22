@@ -1,0 +1,10 @@
+type Mutation {
+    mail(info: MailInput!): Result!
+}
+
+input MailInput {
+    name: String,
+    email: String,
+    subject: String,
+    content: String
+}
