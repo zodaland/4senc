@@ -13,6 +13,7 @@ const server = new ApolloServer({
     },
     schema,
     context: async ({ req }) => {
+        if (process.env.NODE_ENV !== 'production') return;
 		const context: any = {}
 		const token: string|null = getToken(req.headers.cookie);
 		if (token) {
@@ -29,7 +30,8 @@ const server = new ApolloServer({
 			}
 		}
 		return context;
-    }
+    },
+    introspection: process.env.NODE_ENV !== 'production',
 });
 
 server.listen({ port: 8080 })
