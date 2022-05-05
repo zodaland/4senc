@@ -31,5 +31,5 @@ module.exports = {
         }
     },
     key: 'zodaland',
-	corsOrigin: /.*4senc\.com$/
+	corsOrigin: '*'
 };
