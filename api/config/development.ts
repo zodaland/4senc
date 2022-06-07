@@ -20,8 +20,8 @@ module.exports = {
             host: 'zodaland.com',
             port: '25',
             auth: {
-                user: 'admin@zodaland.com',
-                pass: 'e134679'
+                user: 'help@zodaland.com',
+                pass: 'help'
             }
         },
         body: {
